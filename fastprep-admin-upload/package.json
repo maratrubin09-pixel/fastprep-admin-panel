@@ -1,0 +1,17 @@
+{
+  "name": "fastprep-admin-panel",
+  "version": "1.0.0",
+  "description": "Fast Prep USA Admin Panel - CRM, Messengers, Tasks Management",
+  "scripts": {
+    "start": "cd backend && npm start",
+    "build": "cd frontend && npm run build",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": ["admin", "crm", "messengers", "fastprep"],
+  "author": "Marat Rubin",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
