@@ -1,3 +1,8 @@
+const { Sequelize } = require('sequelize');
+const config = require('../config/database');
+
+const env = process.env.NODE_ENV || 'development';
+const dbConfig = config[env];
 let sequelize;
 
 if (dbConfig.use_env_variable && process.env[dbConfig.use_env_variable]) {
